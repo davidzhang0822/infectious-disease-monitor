@@ -2,8 +2,8 @@ name: 传染病公文每日监测
 
 on:
   schedule:
-    # 北京时间 18:00 (UTC 10:00) — 政府公文通常在工作日白天发布
-    - cron: "0 10 * * *"
+    # 北京时间 09:00 (UTC 01:00)
+    - cron: "0 1 * * *"
   workflow_dispatch:  # 允许手动触发
 
 permissions:
