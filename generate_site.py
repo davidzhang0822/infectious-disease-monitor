@@ -1,0 +1,124 @@
+#!/usr/bin/env python3
+"""生成 GitHub Pages 静态站点，展示最近7天的监测报告。"""
+
+import json
+from pathlib import Path
+from datetime import date, datetime, timedelta
+
+DATA_FILE = Path(__file__).parent / "data" / "all_items.json"
+SITE_DIR = Path(__file__).parent / "site"
+SITE_DIR.mkdir(exist_ok=True)
+
+SOURCE_LABELS = {
+    "ndcpa": "国家疾控局",
+    "chinacdc": "中国疾控中心",
+    "customs": "海关总署",
+    "nhc": "国家卫健委",
+}
+
+HTML_TEMPLATE = """<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>传染病公文监测日报</title>
+<style>
+*{{margin:0;padding:0;box-sizing:border-box}}
+body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f5f5;color:#333;line-height:1.6}}
+.container{{max-width:900px;margin:0 auto;padding:20px}}
+.header{{background:#1a237e;color:white;padding:24px 20px;border-radius:12px;margin-bottom:20px}}
+.header h1{{font-size:24px;font-weight:600}}
+.header p{{margin-top:8px;opacity:0.85;font-size:14px}}
+.card{{background:white;border-radius:10px;padding:20px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,0.08)}}
+.card h2{{font-size:16px;color:#1a237e;margin-bottom:12px;border-bottom:2px solid #e8eaf6;padding-bottom:8px}}
+.item{{padding:10px 0;border-bottom:1px solid #f0f0f0}}
+.item:last-child{{border-bottom:none}}
+.item a{{color:#1565c0;text-decoration:none;font-weight:500}}
+.item a:hover{{text-decoration:underline}}
+.meta{{font-size:12px;color:#888;margin-top:4px}}
+.tag{{display:inline-block;background:#e8eaf6;color:#1a237e;padding:2px 8px;border-radius:4px;font-size:11px;margin-right:6px}}
+.empty{{color:#999;font-style:italic}}
+.stats{{display:flex;gap:16px;margin-bottom:20px;flex-wrap:wrap}}
+.stat{{background:white;border-radius:10px;padding:16px 20px;box-shadow:0 1px 3px rgba(0,0,0,0.08);text-align:center;flex:1;min-width:100px}}
+.stat .num{{font-size:28px;font-weight:700;color:#1a237e}}
+.stat .label{{font-size:12px;color:#888;margin-top:4px}}
+.footer{{text-align:center;padding:20px;color:#aaa;font-size:12px}}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>传染病公文每日监测</h1>
+<p>数据源：国家疾控局 / 中国疾控中心 / 海关总署 / 国家卫健委</p>
+<p>最近更新：{update_time}</p>
+</div>
+
+<div class="stats">
+{stats_html}
+</div>
+
+{cards_html}
+
+<div class="footer">
+<p>Powered by GitHub Actions · 每日 UTC 10:00 自动更新</p>
+</div>
+</div>
+</body>
+</html>"""
+
+
+def load_data():
+    if not DATA_FILE.exists():
+        return {}
+    with open(DATA_FILE, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def build_stats(data: dict) -> str:
+    html = ""
+    for key, label in SOURCE_LABELS.items():
+        src = data.get(key, {})
+        count = len(src.get("items", []))
+        html += f'<div class="stat"><div class="num">{count}</div><div class="label">{label}</div></div>'
+    return html
+
+
+def build_cards(data: dict) -> str:
+    html = ""
+    for key, label in SOURCE_LABELS.items():
+        src = data.get(key, {})
+        items = src.get("items", [])[:10]
+        html += f'<div class="card"><h2>{label}</h2>'
+        if not items:
+            html += '<p class="empty">暂无数据（新源待首次抓取）</p>'
+        else:
+            for item in items:
+                title = item.get("title", "未知")
+                pub_date = item.get("date", "?")
+                url = item.get("url", "#")
+                cat = item.get("category", "")
+                html += f'<div class="item"><a href="{url}" target="_blank">{title}</a>'
+                html += f'<div class="meta"><span class="tag">{cat}</span> 日期：{pub_date}</div></div>'
+        html += "</div>"
+    return html
+
+
+def main():
+    data = load_data()
+    update_time = datetime.now().strftime("%Y-%m-%d %H:%M UTC")
+
+    stats_html = build_stats(data)
+    cards_html = build_cards(data)
+
+    page = HTML_TEMPLATE.format(
+        update_time=update_time,
+        stats_html=stats_html,
+        cards_html=cards_html,
+    )
+
+    (SITE_DIR / "index.html").write_text(page, encoding="utf-8")
+    print(f"站点已生成: {SITE_DIR / 'index.html'}")
+
+
+if __name__ == "__main__":
+    main()

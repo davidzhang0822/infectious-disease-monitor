@@ -1,0 +1,45 @@
+name: 传染病公文每日监测
+
+on:
+  schedule:
+    # 北京时间 18:00 (UTC 10:00) — 政府公文通常在工作日白天发布
+    - cron: "0 10 * * *"
+  workflow_dispatch:  # 允许手动触发
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: 安装依赖
+        run: |
+          pip install -r requirements.txt
+          playwright install chromium --with-deps
+
+      - name: 运行监测
+        run: python monitor.py
+
+      - name: 生成 HTML 报告页
+        run: python generate_site.py
+
+      - name: 发布到 GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          force_orphan: true
