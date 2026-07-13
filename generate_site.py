@@ -3,7 +3,7 @@
 
 import json
 from pathlib import Path
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 
 DATA_FILE = Path(__file__).parent / "data" / "all_items.json"
 SITE_DIR = Path(__file__).parent / "site"
@@ -60,7 +60,7 @@ body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;backgro
 {cards_html}
 
 <div class="footer">
-<p>Powered by GitHub Actions · 每日 UTC 10:00 自动更新</p>
+<p>Powered by GitHub Actions · 每日 北京时间 09:00 自动更新</p>
 </div>
 </div>
 </body>
@@ -105,7 +105,8 @@ def build_cards(data: dict) -> str:
 
 def main():
     data = load_data()
-    update_time = datetime.now().strftime("%Y-%m-%d %H:%M UTC")
+    # GitHub runner 本地时区为 UTC，显式加 8 小时得到北京时间
+    update_time = datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d %H:%M (北京时间)")
 
     stats_html = build_stats(data)
     cards_html = build_cards(data)
