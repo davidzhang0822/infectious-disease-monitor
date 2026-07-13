@@ -2,13 +2,12 @@
 """
 传染病公文多源每日监测脚本
 
-数据源：
-  Tier 1 - 已接入:
-    国家疾控局 ndcpa.gov.cn     防控方案、通知公告、政策解读
-    中国疾控中心 chinacdc.cn    疫情月报、新冠月报、呼吸道哨点周报
-  Tier 1 - 框架就绪（需 browser-act）:
-    海关总署 customs.gov.cn      口岸疫情防控公告
-    国家卫健委 nhc.gov.cn        诊疗方案、法定传染病目录调整
+数据源（自动发现，无需手动注册）：
+  国家疾控局 ndcpa.gov.cn     防控方案、通知公告、政策解读
+  中国疾控中心 chinacdc.cn    疫情月报、新冠月报、呼吸道哨点周报
+  海关总署 customs.gov.cn      口岸疫情防控公告（Playwright 绕过 WAF）
+  国家卫健委 nhc.gov.cn        诊疗方案、法定传染病目录调整（Playwright 绕过 WAF）
+  新增源：在 sources/ 下新建继承 BaseSource 的模块并定义 key 即可自动生效。
 
 用法:
     python3 monitor.py                 # 全源检测，生成日报
@@ -30,20 +29,38 @@ DATA_DIR.mkdir(exist_ok=True)
 REPORT_DIR = SCRIPT_DIR / "reports"
 REPORT_DIR.mkdir(exist_ok=True)
 
-from sources import SeenStore, detect_new
-from sources.ndcpa import NdcpaSource
-from sources.chinacdc import ChinacdcSource
-from sources.customs import CustomsSource
-from sources.nhc import NHCSource
+from sources import SeenStore, detect_new, BaseSource
+import importlib
+import pkgutil
 
 
-# ---- 数据源注册 ----
-ALL_SOURCES = {
-    "ndcpa": NdcpaSource(),
-    "chinacdc": ChinacdcSource(),
-    "customs": CustomsSource(),
-    "nhc": NHCSource(),
-}
+# ---- 自动数据源发现 ----
+# 新增数据源：只需在 sources/ 下新建一个继承 BaseSource 且定义 key 的模块，
+# 重启/重新运行即自动生效，无需修改本文件。
+def discover_sources():
+    """扫描 sources 包，自动加载所有 BaseSource 子类"""
+    found = {}
+    package = __import__("sources", fromlist=["__path__"])
+    for _, modname, _ in pkgutil.iter_modules(package.__path__):
+        # 跳过包初始化与纯工具模块
+        if modname in ("__init__", "browser"):
+            continue
+        try:
+            module = importlib.import_module(f"sources.{modname}")
+        except Exception as e:
+            print(f"  [警告] 加载源模块失败 sources.{modname}: {e}")
+            continue
+        for name in dir(module):
+            obj = getattr(module, name)
+            if (isinstance(obj, type)
+                    and issubclass(obj, BaseSource)
+                    and obj is not BaseSource
+                    and getattr(obj, "key", None)):
+                found[obj.key] = obj()
+    return dict(sorted(found.items()))
+
+
+ALL_SOURCES = discover_sources()
 
 
 def run_monitor(sources: dict, init_mode: bool = False):
