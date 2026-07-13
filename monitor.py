@@ -18,7 +18,7 @@
 import re
 import json
 import sys
-from datetime import datetime, date
+from datetime import datetime, date, timezone, timedelta
 from pathlib import Path
 
 import requests
@@ -123,7 +123,7 @@ def generate_report(all_new: dict, all_data: dict) -> Path:
         "# 传染病公文多源监测日报",
         "",
         f"**日期**: {today_str}",
-        f"**监测时间**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+        f"**监测时间**: {datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S')} (北京时间)",
         f"**监测源数**: {len(ALL_SOURCES)}",
         f"**新增总计**: {total_new} 条",
         "",
