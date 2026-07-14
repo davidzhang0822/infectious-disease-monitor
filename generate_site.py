@@ -6,6 +6,7 @@ from pathlib import Path
 from datetime import date, datetime, timedelta, timezone
 
 DATA_FILE = Path(__file__).parent / "data" / "all_items.json"
+LATEST_FILE = Path(__file__).parent / "data" / "latest_updates.json"
 SITE_DIR = Path(__file__).parent / "site"
 SITE_DIR.mkdir(exist_ok=True)
 
@@ -43,6 +44,10 @@ body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;backgro
 .stat .num{{font-size:28px;font-weight:700;color:#1a237e}}
 .stat .label{{font-size:12px;color:#888;margin-top:4px}}
 .footer{{text-align:center;padding:20px;color:#aaa;font-size:12px}}
+.latest{{background:linear-gradient(135deg,#e8f5e9,#f4fbf4);border:1px solid #c8e6c9;border-left:4px solid #2e7d32;border-radius:10px;padding:20px;margin-bottom:20px}}
+.latest h2{{font-size:17px;color:#1b5e20;margin-bottom:12px;display:flex;align-items:center;gap:8px}}
+.latest .badge{{background:#2e7d32;color:#fff;font-size:12px;padding:2px 9px;border-radius:10px;font-weight:600}}
+.latest .none{{color:#666;font-style:italic;margin-top:6px}}
 </style>
 </head>
 <body>
@@ -52,6 +57,8 @@ body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;backgro
 <p>数据源：国家疾控局 / 中国疾控中心 / 海关总署 / 国家卫健委</p>
 <p>最近更新：{update_time}</p>
 </div>
+
+{latest_html}
 
 <div class="stats">
 {stats_html}
@@ -83,6 +90,42 @@ def build_stats(data: dict) -> str:
     return html
 
 
+def build_latest() -> str:
+    """渲染顶部'最新更新'栏目：展示本次运行新增的条目"""
+    if not LATEST_FILE.exists():
+        return '<div class="latest"><h2>最新更新</h2><p class="none">暂无更新记录（尚未运行过监测）</p></div>'
+    with open(LATEST_FILE, encoding="utf-8") as f:
+        d = json.load(f)
+    updated = d.get("updated_at", "")
+    items = d.get("items", [])
+    is_init = d.get("is_init", False)
+
+    if not items:
+        note = "系统初始化完成，首次收录历史数据。" if is_init else "自上次检查以来无新增内容。"
+        return (f'<div class="latest"><h2>最新更新 <span class="badge">0</span></h2>'
+                f'<p class="none">{note}</p>'
+                f'<p class="meta">检查时间：{updated}</p></div>')
+
+    shown = items[:20]
+    html = f'<div class="latest"><h2>最新更新 <span class="badge">{len(items)}</span></h2>'
+    html += f'<p class="meta">检查时间：{updated}'
+    if is_init:
+        html += ' · 系统初始化，首次收录以下历史数据'
+    html += '</p>'
+    for it in shown:
+        title = it.get("title", "")
+        url = it.get("url", "#")
+        src = it.get("source_name", "")
+        cat = it.get("category", "")
+        date = it.get("date", "")
+        html += f'<div class="item"><a href="{url}" target="_blank">{title}</a>'
+        html += f'<div class="meta"><span class="tag">{src}</span> {cat} · 日期：{date}</div></div>'
+    if len(items) > len(shown):
+        html += f'<p class="meta">… 仅显示前 {len(shown)} 条，完整列表见下方各源栏目</p>'
+    html += '</div>'
+    return html
+
+
 def build_cards(data: dict) -> str:
     html = ""
     for key, label in SOURCE_LABELS.items():
@@ -110,9 +153,11 @@ def main():
 
     stats_html = build_stats(data)
     cards_html = build_cards(data)
+    latest_html = build_latest()
 
     page = HTML_TEMPLATE.format(
         update_time=update_time,
+        latest_html=latest_html,
         stats_html=stats_html,
         cards_html=cards_html,
     )
