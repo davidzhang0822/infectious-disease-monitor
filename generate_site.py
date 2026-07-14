@@ -60,7 +60,7 @@ body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;backgro
 {cards_html}
 
 <div class="footer">
-<p>Powered by GitHub Actions · 每日 北京时间 09:00 自动更新</p>
+<p>Powered by GitHub Actions · 每日 北京时间 00:00 自动更新（实际约 03:00 完成）</p>
 </div>
 </div>
 </body>
