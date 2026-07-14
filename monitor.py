@@ -172,6 +172,32 @@ def generate_report(all_new: dict, all_data: dict) -> Path:
     return report_path
 
 
+def save_latest_updates(new_items: dict, init_mode: bool):
+    """保存本次运行新增的条目，供站点'最新更新'栏目展示"""
+    flat = []
+    for key, items in new_items.items():
+        src = ALL_SOURCES.get(key)
+        src_name = src.name if src else key
+        for it in items:
+            flat.append({
+                "source_key": key,
+                "source_name": src_name,
+                "title": it.get("title", ""),
+                "date": it.get("date", ""),
+                "url": it.get("url", "#"),
+                "category": it.get("category", ""),
+            })
+    flat.sort(key=lambda x: x.get("date", ""), reverse=True)
+    payload = {
+        "updated_at": datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d %H:%M (北京时间)"),
+        "is_init": init_mode,
+        "count": len(flat),
+        "items": flat,
+    }
+    with open(DATA_DIR / "latest_updates.json", "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+
+
 def main():
     init_mode = "--init" in sys.argv
 
@@ -197,6 +223,7 @@ def main():
     print(f"  模式: {'初始化' if init_mode else '日常检测'}")
 
     new_items, report_path = run_monitor(active_sources, init_mode)
+    save_latest_updates(new_items, init_mode)
 
     print(f"\n{'='*50}")
     print(f"监测完成")
