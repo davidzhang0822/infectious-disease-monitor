@@ -1,6 +1,9 @@
 __pycache__/
 *.pyc
-data/
+data/*
+# 增量检测所需的状态文件需持久化（CI 每次提交回 main）
+!data/all_items.json
+!data/latest_updates.json
 reports/
 site/
 .env
