@@ -173,7 +173,13 @@ def generate_report(all_new: dict, all_data: dict) -> Path:
 
 
 def save_latest_updates(new_items: dict, init_mode: bool):
-    """保存本次运行新增的条目，供站点'最新更新'栏目展示"""
+    """保存本次运行新增的条目，供站点'最新更新'栏目展示。
+    粘性：若本次无新增且已存在历史记录，则保留上一次内容（栏目不清空），
+    仅当真正抓到新公告时才用新批次覆盖。"""
+    latest_path = DATA_DIR / "latest_updates.json"
+    total_new = sum(len(v) for v in new_items.values())
+    if total_new == 0 and latest_path.exists():
+        return  # 无新增且已有记录 → 保留上一批“最新更新”
     flat = []
     for key, items in new_items.items():
         src = ALL_SOURCES.get(key)
@@ -194,7 +200,7 @@ def save_latest_updates(new_items: dict, init_mode: bool):
         "count": len(flat),
         "items": flat,
     }
-    with open(DATA_DIR / "latest_updates.json", "w", encoding="utf-8") as f:
+    with open(latest_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
 
