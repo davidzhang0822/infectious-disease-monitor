@@ -1,0 +1,960 @@
+{
+  "chinacdc": {
+    "ids": [
+      "cdc_1836507",
+      "cdc_1835734",
+      "cdc_1835782",
+      "cdc_1838004",
+      "cdc_1835765",
+      "cdc_1836511",
+      "cdc_1837979",
+      "cdc_1835272",
+      "cdc_315027",
+      "cdc_313323",
+      "cdc_1835485",
+      "cdc_1835608",
+      "cdc_314557",
+      "cdc_310229",
+      "cdc_314543",
+      "cdc_315435",
+      "cdc_1836734",
+      "cdc_312919",
+      "cdc_1834909",
+      "cdc_1836713",
+      "cdc_315330",
+      "cdc_1836995",
+      "cdc_1835977",
+      "cdc_313996",
+      "cdc_1837445",
+      "cdc_314013",
+      "cdc_312903",
+      "cdc_1837916",
+      "cdc_1837703",
+      "cdc_314905",
+      "cdc_309202",
+      "cdc_1836113",
+      "cdc_302192",
+      "cdc_313287",
+      "cdc_316151",
+      "cdc_310265",
+      "cdc_309203"
+    ],
+    "items": [
+      {
+        "id": "cdc_1838004",
+        "title": "全国急性呼吸道传染病哨点监测情况（2026年第27周）",
+        "date": "2026-07-09",
+        "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202607/t20260709_1838004.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "急性呼吸道传染病哨点监测"
+      },
+      {
+        "id": "cdc_1837979",
+        "title": "2026年6月全国传染病疫情概况",
+        "date": "2026-07-08",
+        "url": "https://www.chinacdc.cn/jksj/jksj01/202607/t20260708_1837979.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国法定传染病疫情概况"
+      },
+      {
+        "id": "cdc_1837916",
+        "title": "全国新型冠状病毒感染疫情情况（2026年6月）",
+        "date": "2026-07-08",
+        "url": "https://www.chinacdc.cn/jksj/xgbdyq/202607/t20260708_1837916.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国新冠感染疫情情况"
+      },
+      {
+        "id": "cdc_1837703",
+        "title": "全国急性呼吸道传染病哨点监测情况（2026年第26周）",
+        "date": "2026-07-02",
+        "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202607/t20260702_1837703.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "急性呼吸道传染病哨点监测"
+      },
+      {
+        "id": "cdc_1837445",
+        "title": "全国急性呼吸道传染病哨点监测情况（2026年第25周）",
+        "date": "2026-06-25",
+        "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202606/t20260625_1837445.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "急性呼吸道传染病哨点监测"
+      },
+      {
+        "id": "cdc_1836995",
+        "title": "全国急性呼吸道传染病哨点监测情况（2026年第24周）",
+        "date": "2026-06-18",
+        "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202606/t20260618_1836995.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "急性呼吸道传染病哨点监测"
+      },
+      {
+        "id": "cdc_1836511",
+        "title": "全国新型冠状病毒感染疫情情况（2026年5月）",
+        "date": "2026-06-11",
+        "url": "https://www.chinacdc.cn/jksj/xgbdyq/202606/t20260605_1836511.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国新冠感染疫情情况"
+      },
+      {
+        "id": "cdc_1836713",
+        "title": "全国急性呼吸道传染病哨点监测情况（2026年第23周）",
+        "date": "2026-06-11",
+        "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202606/t20260611_1836713.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "急性呼吸道传染病哨点监测"
+      },
+      {
+        "id": "cdc_1836734",
+        "title": "2026年5月全国传染病疫情概况",
+        "date": "2026-06-10",
+        "url": "https://www.chinacdc.cn/jksj/jksj01/202606/t20260611_1836734.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国法定传染病疫情概况"
+      },
+      {
+        "id": "cdc_1836507",
+        "title": "全国急性呼吸道传染病哨点监测情况（2026年第22周）",
+        "date": "2026-06-04",
+        "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202606/t20260604_1836507.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "急性呼吸道传染病哨点监测"
+      },
+      {
+        "id": "cdc_1836113",
+        "title": "全国急性呼吸道传染病哨点监测情况（2026年第21周）",
+        "date": "2026-05-28",
+        "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202605/t20260528_1836113.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "急性呼吸道传染病哨点监测"
+      },
+      {
+        "id": "cdc_1835977",
+        "title": "全国急性呼吸道传染病哨点监测情况（2026年第20周）",
+        "date": "2026-05-21",
+        "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202605/t20260521_1835977.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "急性呼吸道传染病哨点监测"
+      },
+      {
+        "id": "cdc_1835782",
+        "title": "全国急性呼吸道传染病哨点监测情况（2026年第19周）",
+        "date": "2026-05-14",
+        "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202605/t20260514_1835782.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "急性呼吸道传染病哨点监测"
+      },
+      {
+        "id": "cdc_1835765",
+        "title": "2026年4月全国传染病疫情概况",
+        "date": "2026-05-13",
+        "url": "https://www.chinacdc.cn/jksj/jksj01/202605/t20260514_1835765.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国法定传染病疫情概况"
+      },
+      {
+        "id": "cdc_1835734",
+        "title": "全国新型冠状病毒感染疫情情况（2026年4月）",
+        "date": "2026-05-13",
+        "url": "https://www.chinacdc.cn/jksj/xgbdyq/202605/t20260512_1835734.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国新冠感染疫情情况"
+      },
+      {
+        "id": "cdc_1835608",
+        "title": "全国急性呼吸道传染病哨点监测情况（2026年第18周）",
+        "date": "2026-05-07",
+        "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202605/t20260507_1835608.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "急性呼吸道传染病哨点监测"
+      },
+      {
+        "id": "cdc_1835485",
+        "title": "全国急性呼吸道传染病哨点监测情况（2026年第17周）",
+        "date": "2026-04-30",
+        "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202604/t20260430_1835485.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "急性呼吸道传染病哨点监测"
+      },
+      {
+        "id": "cdc_1835272",
+        "title": "全国急性呼吸道传染病哨点监测情况（2026年第16周）",
+        "date": "2026-04-23",
+        "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202604/t20260423_1835272.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "急性呼吸道传染病哨点监测"
+      },
+      {
+        "id": "cdc_1834909",
+        "title": "2026年3月全国传染病疫情概况",
+        "date": "2026-04-10",
+        "url": "https://www.chinacdc.cn/jksj/jksj01/202604/t20260410_1834909.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国法定传染病疫情概况"
+      },
+      {
+        "id": "cdc_316151",
+        "title": "全国新型冠状病毒感染疫情情况（2026年3月）",
+        "date": "2026-04-10",
+        "url": "https://www.chinacdc.cn/jksj/xgbdyq/202604/t20260407_316151.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国新冠感染疫情情况"
+      },
+      {
+        "id": "cdc_315435",
+        "title": "2026年2月全国传染病疫情概况",
+        "date": "2026-03-12",
+        "url": "https://www.chinacdc.cn/jksj/jksj01/202603/t20260312_315435.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国法定传染病疫情概况"
+      },
+      {
+        "id": "cdc_315330",
+        "title": "全国新型冠状病毒感染疫情情况（2026年2月）",
+        "date": "2026-03-12",
+        "url": "https://www.chinacdc.cn/jksj/xgbdyq/202603/t20260310_315330.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国新冠感染疫情情况"
+      },
+      {
+        "id": "cdc_315027",
+        "title": "2026年1月全国传染病疫情概况",
+        "date": "2026-02-10",
+        "url": "https://www.chinacdc.cn/jksj/jksj01/202602/t20260210_315027.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国法定传染病疫情概况"
+      },
+      {
+        "id": "cdc_314905",
+        "title": "全国新型冠状病毒感染疫情情况（2026年1月）",
+        "date": "2026-02-10",
+        "url": "https://www.chinacdc.cn/jksj/xgbdyq/202602/t20260203_314905.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国新冠感染疫情情况"
+      },
+      {
+        "id": "cdc_314557",
+        "title": "2025年12月全国法定传染病疫情概况",
+        "date": "2026-01-09",
+        "url": "https://www.chinacdc.cn/jksj/jksj01/202601/t20260109_314557.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国法定传染病疫情概况"
+      },
+      {
+        "id": "cdc_314543",
+        "title": "全国新型冠状病毒感染疫情情况（2025年12月）",
+        "date": "2026-01-09",
+        "url": "https://www.chinacdc.cn/jksj/xgbdyq/202601/t20260109_314543.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国新冠感染疫情情况"
+      },
+      {
+        "id": "cdc_314013",
+        "title": "2025年11月全国法定传染病疫情概况",
+        "date": "2025-12-05",
+        "url": "https://www.chinacdc.cn/jksj/jksj01/202512/t20251205_314013.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国法定传染病疫情概况"
+      },
+      {
+        "id": "cdc_313996",
+        "title": "全国新型冠状病毒感染疫情情况（2025年11月）",
+        "date": "2025-12-05",
+        "url": "https://www.chinacdc.cn/jksj/xgbdyq/202512/t20251205_313996.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国新冠感染疫情情况"
+      },
+      {
+        "id": "cdc_313323",
+        "title": "2025年10月全国法定传染病疫情概况",
+        "date": "2025-11-06",
+        "url": "https://www.chinacdc.cn/jksj/jksj01/202511/t20251106_313323.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国法定传染病疫情概况"
+      },
+      {
+        "id": "cdc_313287",
+        "title": "全国新型冠状病毒感染疫情情况（2025年10月）",
+        "date": "2025-11-06",
+        "url": "https://www.chinacdc.cn/jksj/xgbdyq/202511/t20251105_313287.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国新冠感染疫情情况"
+      },
+      {
+        "id": "cdc_312919",
+        "title": "2025年9月全国法定传染病疫情概况",
+        "date": "2025-10-11",
+        "url": "https://www.chinacdc.cn/jksj/jksj01/202510/t20251011_312919.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国法定传染病疫情概况"
+      },
+      {
+        "id": "cdc_312903",
+        "title": "全国新型冠状病毒感染疫情情况（2025年9月）",
+        "date": "2025-10-11",
+        "url": "https://www.chinacdc.cn/jksj/xgbdyq/202510/t20251011_312903.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国新冠感染疫情情况"
+      },
+      {
+        "id": "cdc_310265",
+        "title": "2025年8月全国法定传染病疫情概况",
+        "date": "2025-09-05",
+        "url": "https://www.chinacdc.cn/jksj/jksj01/202509/t20250905_310265.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国法定传染病疫情概况"
+      },
+      {
+        "id": "cdc_310229",
+        "title": "全国新型冠状病毒感染疫情情况（2025年8月）",
+        "date": "2025-09-05",
+        "url": "https://www.chinacdc.cn/jksj/xgbdyq/202509/t20250905_310229.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国新冠感染疫情情况"
+      },
+      {
+        "id": "cdc_309203",
+        "title": "2025年7月全国法定传染病疫情概况",
+        "date": "2025-08-06",
+        "url": "https://www.chinacdc.cn/jksj/jksj01/202508/t20250806_309203.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国法定传染病疫情概况"
+      },
+      {
+        "id": "cdc_309202",
+        "title": "全国新型冠状病毒感染疫情情况（2025年7月）",
+        "date": "2025-08-06",
+        "url": "https://www.chinacdc.cn/jksj/xgbdyq/202508/t20250806_309202.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国新冠感染疫情情况"
+      },
+      {
+        "id": "cdc_302192",
+        "title": "版权与免责声明",
+        "date": "",
+        "url": "https://www.chinacdc.cn/jksj/jksj01/mzsm/202410/t20241028_302192.html",
+        "source": "chinacdc",
+        "source_name": "中国疾控中心",
+        "category": "全国法定传染病疫情概况"
+      }
+    ],
+    "last_update": "2026-07-15T09:01:11.406154"
+  },
+  "customs": {
+    "ids": [
+      "customs_seed_2026_64",
+      "customs_seed_2026_65"
+    ],
+    "items": [
+      {
+        "id": "customs_seed_2026_65",
+        "title": "海关总署公告2026年第65号（关于防止埃博拉病毒病疫情传入我国的公告）",
+        "date": "2026-05-18",
+        "url": "http://www.customs.gov.cn/customs/attachDir/2026/05/%E6%B5%B7%E5%85%B3%E6%80%BB%E7%BD%B2%E5%85%B3%E4%BA%8E%E9%98%B2%E6%AD%A2%E5%9F%83%E5%8D%9A%E6%8B%89%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E6%83%85%E4%BC%A0%E5%85%A5%E6%88%91%E5%9B%BD%E7%9A%84%E5%85%AC%E5%91%8A(1).pdf",
+        "source": "customs",
+        "source_name": "海关总署",
+        "category": "口岸疫情防控公告"
+      },
+      {
+        "id": "customs_seed_2026_64",
+        "title": "海关总署 农业农村部公告2026年第64号（关于防止塞拉利昂绵羊痘和山羊痘传入我国的公告）",
+        "date": "2026-05-14",
+        "url": "http://www.customs.gov.cn/customs/attachDir/2026/05/%E6%B5%B7%E5%85%B3%E6%80%BB%E7%BD%B2%20%E5%86%9C%E4%B8%9A%E5%86%9C%E6%9D%91%E9%83%A8%E5%85%B3%E4%BA%8E%E9%98%B2%E6%AD%A2%E5%A1%9E%E6%8B%89%E5%88%A9%E6%98%82%E7%BB%B5%E7%BE%8A%E7%97%98%E5%92%8C%E5%B1%B1%E7%BE%8A%E7%97%98%E4%BC%A0%E5%85%A5%E6%88%91%E5%9B%BD%E7%9A%84%E5%85%AC%E5%91%8A%281%29.pdf",
+        "source": "customs",
+        "source_name": "海关总署",
+        "category": "口岸疫情防控公告"
+      }
+    ],
+    "last_update": "2026-07-15T09:01:11.406175"
+  },
+  "ndcpa": {
+    "ids": [
+      "2046509544521502720",
+      "2036682501613064192",
+      "2066765358108676096",
+      "2006245870867484672",
+      "2008338699206955008",
+      "1983722800483307520",
+      "2042496566495186944",
+      "1971537076300451840",
+      "2019993729773244416",
+      "2008805805211947008",
+      "2039659610262376448",
+      "2032349169760768000",
+      "1971578865258500096",
+      "2005832020712132608",
+      "2015961597342027776",
+      "2008803245772148736",
+      "2042601950245457920",
+      "1994302706715889664",
+      "2074752747875766272",
+      "2008339904066916352",
+      "2007635263490527232",
+      "2037421256917553152",
+      "2072956213861453824",
+      "2064284645614587904",
+      "2017055204379627520",
+      "1983714327087452160",
+      "2043929536477171712",
+      "2073005020766703616",
+      "2031652087534096384",
+      "1992921376245583872",
+      "2033351536413151232",
+      "2027290097466380288",
+      "2074313232195424256",
+      "2021485909675249664",
+      "1984174290821877760",
+      "2016429152229822464",
+      "2054828277392379904",
+      "2034194066365124608",
+      "2049364475653820416",
+      "2006202728881491968",
+      "2027291161137680384",
+      "1999031489347883008",
+      "1988800344257630208",
+      "2054879306649604096",
+      "2046470861542035456",
+      "2020773511108661248",
+      "2032344986856886272",
+      "2048762808621240320",
+      "2028780865511133184",
+      "2016776107086745600"
+    ],
+    "items": [
+      {
+        "id": "2074752747875766272",
+        "title": "关于印发布鲁氏菌病防控方案的通知",
+        "date": "2026-07-08",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2074752747875766272.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2074313232195424256",
+        "title": "国家疾控局综合司关于做好2026年“世界肝炎日”主题宣传活动的通知",
+        "date": "2026-07-07",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2074313232195424256.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2073005020766703616",
+        "title": "关于印发国家免疫规划疫苗儿童免疫程序及说明（2026年版）的通知",
+        "date": "2026-07-03",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2073005020766703616.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2072956213861453824",
+        "title": "国家疾控局关于发布《紫外线消毒灯卫生要求》等10项疾病预防控制行业标准的通告",
+        "date": "2026-07-03",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2072956213861453824.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2066765358108676096",
+        "title": "国家疾控局综合司关于印发埃博拉病毒病防控方案（2026年版）的通知",
+        "date": "2026-06-16",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2066765358108676096.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2064284645614587904",
+        "title": "关于印发2026年纠正医药购销领域和医疗服务中不正之风工作要点的通知",
+        "date": "2026-06-09",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2064284645614587904.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2054879306649604096",
+        "title": "国家疾控局关于印发传染病疫情信息公布管理办法的通知",
+        "date": "2026-05-14",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2054879306649604096.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2054828277392379904",
+        "title": "关于印发全国卫生健康系统职业技能竞赛结核病防治和消毒技能项目实施方案的通知",
+        "date": "2026-05-14",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2054828277392379904.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2049364475653820416",
+        "title": "关于开展2026年防治碘缺乏病日宣传活动的通知",
+        "date": "2026-04-28",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2049364475653820416.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2048762808621240320",
+        "title": "关于做好2026年“五一”假期前后及夏季重点传染病防治工作的通知",
+        "date": "2026-04-27",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2048762808621240320.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2046470861542035456",
+        "title": "关于开展2026年托育机构、幼儿园、 校外培训机构、学校采光照明“双随机” 抽检工作的通知",
+        "date": "2026-04-21",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2046470861542035456.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2046509544521502720",
+        "title": "关于印发《伤害预防控制行动计划 （2026—2030年）》的通知",
+        "date": "2026-04-21",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2046509544521502720.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2043929536477171712",
+        "title": "国家卫生健康委科教司 国家疾控局科教国际司关于公布2026年度继续医学教育推荐项目的通知",
+        "date": "2026-04-14",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2043929536477171712.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2042601950245457920",
+        "title": "关于依法做好重点虫媒传染病防控工作的通知",
+        "date": "2026-04-10",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2042601950245457920.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2042496566495186944",
+        "title": "国家疾控局综合司关于组织开展2026年全国儿童预防接种日宣传活动的通知",
+        "date": "2026-04-10",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2042496566495186944.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2039659610262376448",
+        "title": "国家疾控局综合司关于开展 2026年全国疟疾日宣传活动的通知",
+        "date": "2026-04-03",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2039659610262376448.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2037421256917553152",
+        "title": "关于印发2026年国家随机监督抽查计划的通知",
+        "date": "2026-03-27",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2037421256917553152.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2036682501613064192",
+        "title": "国家卫生健康委员会公告",
+        "date": "2026-03-25",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2036682501613064192.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2034194066365124608",
+        "title": "关于印发传染病哨点医院监测工作管理规范（试行）的通知",
+        "date": "2026-03-18",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2034194066365124608.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2033351536413151232",
+        "title": "关于印发《医疗卫生机构传染病防治监督执法工作规范（2026版）》的通知",
+        "date": "2026-03-16",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2033351536413151232.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2032344986856886272",
+        "title": "国家疾控局综合司关于组织开展 2026年全国血吸虫病防治宣传周活动的通知",
+        "date": "2026-03-12",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2032344986856886272.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2032349169760768000",
+        "title": "关于印发包虫病控制与消除评价办法（试行）的通知",
+        "date": "2026-03-12",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2032349169760768000.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2031652087534096384",
+        "title": "关于印发推动百千万志愿者结核病防治知识传播活动高质量发展指导意见的通知",
+        "date": "2026-03-11",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2031652087534096384.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2028780865511133184",
+        "title": "国家疾控局综合司关于组织开展2026年世界防治结核病日宣传活动的通知",
+        "date": "2026-03-03",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2028780865511133184.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2027291161137680384",
+        "title": "关于印发《全国碘缺乏病科学精准防控行动方案（2026—2030年）》的通知",
+        "date": "2026-02-27",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2027291161137680384.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2027290097466380288",
+        "title": "关于印发《全国地方病控制和消除实施方案（2026—2030年）》的通知 ",
+        "date": "2026-02-27",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2027290097466380288.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2021485909675249664",
+        "title": "关于印发《卫生健康行政执法装备标准 （2025版）》的通知",
+        "date": "2026-02-11",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2021485909675249664.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2020773511108661248",
+        "title": "关于印发重大传染病疫情首发首报机构及人员通报和奖励办法（试行）的通知",
+        "date": "2026-02-09",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2020773511108661248.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2019993729773244416",
+        "title": "关于做好2026年春节假期前后及春季重点传染病防治工作的通知",
+        "date": "2026-02-07",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2019993729773244416.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2017055204379627520",
+        "title": "关于调整国家免疫规划流行性乙型脑炎疫苗接种范围的通知",
+        "date": "2026-01-30",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2017055204379627520.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2016776107086745600",
+        "title": "关于印发传染病信息报告管理规范（2026年版）的通知",
+        "date": "2026-01-29",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2016776107086745600.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2016429152229822464",
+        "title": "关于印发公共卫生医师规范化培训工作方案（试行）的通知",
+        "date": "2026-01-28",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2016429152229822464.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2015961597342027776",
+        "title": "关于印发疾病预防控制领域强基实施方案的通知",
+        "date": "2026-01-27",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2015961597342027776.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2008805805211947008",
+        "title": "国家疾控局关于印发《涉及饮用水卫生安全产品分类目录（2025年版）》的通知",
+        "date": "2026-01-07",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2008805805211947008.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2008803245772148736",
+        "title": "国家疾控局关于利用新材料、新工艺和新化学物质生产的涉及饮用水卫生安全产品判定依据的通告",
+        "date": "2026-01-07",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2008803245772148736.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2008338699206955008",
+        "title": "关于印发儿童青少年“五健”促进行动计划（2026—2030年）的通知",
+        "date": "2026-01-06",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2008338699206955008.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2008339904066916352",
+        "title": "国家疾控局关于发布《污水中新型冠状病毒监测技术规范》等8项疾病预防控制行业标准的通告",
+        "date": "2026-01-06",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2008339904066916352.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2007635263490527232",
+        "title": "关于开展2026年“世界防治麻风病日” 活动的通知",
+        "date": "2026-01-04",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2007635263490527232.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2006245870867484672",
+        "title": "关于印发第二批健康中国行动——健康环境促进行动典型案例的通知",
+        "date": "2025-12-31",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2006245870867484672.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2006202728881491968",
+        "title": "关于发布《优先控制化学品名录（第三批）》的公告",
+        "date": "2025-12-31",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2006202728881491968.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "2005832020712132608",
+        "title": "关于印发传染病监测管理办法的通知",
+        "date": "2025-12-30",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2005832020712132608.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "1999031489347883008",
+        "title": "国家疾控局综合司关于通报2025年全国消毒技能竞赛等三项技能竞赛结果的函",
+        "date": "2025-12-10",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_1999031489347883008.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "1994302706715889664",
+        "title": "国家疾控局综合司关于做好传染病疫情线索公众报告工作的通知",
+        "date": "2025-11-28",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_1994302706715889664.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "1992921376245583872",
+        "title": "关于印发包虫病防治技术方案 （2025年版）的通知",
+        "date": "2025-11-24",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_1992921376245583872.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "1988800344257630208",
+        "title": "国家疾控局关于发布《疟原虫检测 免疫层析法》等13项疾病预防控制行业标准的通告",
+        "date": "2025-11-13",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_1988800344257630208.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "1984174290821877760",
+        "title": "国家疾控局综合司关于印发疾控机构卫生专业技术人员继续医学教育学分管理办法（试行）的通知",
+        "date": "2025-10-31",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_1984174290821877760.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "1983722800483307520",
+        "title": "国务院防治艾滋病工作委员会办公室关于做好2025年“世界艾滋病日”主题活动的通知",
+        "date": "2025-10-31",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_1983722800483307520.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "1983714327087452160",
+        "title": "关于将人乳头瘤病毒疫苗纳入国家免疫规划有关工作事宜的通知",
+        "date": "2025-10-30",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_1983714327087452160.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "1971578865258500096",
+        "title": "关于做好2025年国庆中秋前后及秋冬季新冠病毒感染等重点传染病防治工作的通知",
+        "date": "2025-09-26",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_1971578865258500096.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      },
+      {
+        "id": "1971537076300451840",
+        "title": "关于发布《重点控制的土壤有毒有害物质名录（第一批）》的公告",
+        "date": "2025-09-26",
+        "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_1971537076300451840.html",
+        "source": "ndcpa",
+        "source_name": "国家疾控局",
+        "category": "通知公告"
+      }
+    ],
+    "last_update": "2026-07-15T09:01:11.406184"
+  },
+  "nhc": {
+    "ids": [
+      "nhc_seed_2026_0422",
+      "nhc_seed_2026_0708",
+      "nhc_seed_2026_0325",
+      "nhc_seed_2026_0601"
+    ],
+    "items": [
+      {
+        "id": "nhc_seed_2026_0708",
+        "title": "关于印发拉沙热诊疗方案（2026年版）的通知",
+        "date": "2026-07-08",
+        "url": "https://www.nhc.gov.cn/ylyjs/gzdt/202607/a749751f95d24899ba62195635d4b794.shtml",
+        "source": "nhc",
+        "source_name": "国家卫健委",
+        "category": "医疗应急司-工作动态"
+      },
+      {
+        "id": "nhc_seed_2026_0601",
+        "title": "关于印发埃博拉病毒病诊疗方案（2026年版）的通知",
+        "date": "2026-06-01",
+        "url": "https://www.nhc.gov.cn/ylyjs/gzdt/202606/a5751c21a4be4e708cdd1914ec2c6980.shtml",
+        "source": "nhc",
+        "source_name": "国家卫健委",
+        "category": "医疗应急司-工作动态"
+      },
+      {
+        "id": "nhc_seed_2026_0422",
+        "title": "关于印发尼帕病毒病诊疗方案（2026年版）的通知",
+        "date": "2026-04-22",
+        "url": "https://www.nhc.gov.cn/ylyjs/gzdt/202604/685eea491175461cb4702252276b662a.shtml",
+        "source": "nhc",
+        "source_name": "国家卫健委",
+        "category": "医疗应急司-工作动态"
+      },
+      {
+        "id": "nhc_seed_2026_0325",
+        "title": "将基孔肯雅热和发热伴血小板减少综合征纳入乙类传染病管理的政策解读",
+        "date": "2026-03-25",
+        "url": "https://www.nhc.gov.cn/ylyjs/gzdt/202603/dec2534f394540c3b3d8c87fb3cad26d.shtml",
+        "source": "nhc",
+        "source_name": "国家卫健委",
+        "category": "医疗应急司-工作动态"
+      }
+    ],
+    "last_update": "2026-07-15T09:01:11.406187"
+  }
+}
