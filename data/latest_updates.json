@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-15 09:06 (北京时间)",
+  "updated_at": "2026-07-16 01:14 (北京时间)",
   "is_init": false,
-  "count": 0,
-  "items": []
+  "count": 1,
+  "items": [
+    {
+      "source_key": "ndcpa",
+      "source_name": "国家疾控局",
+      "title": "国家疾控局综合司疾控政策研究课题征集公告",
+      "date": "2026-07-15",
+      "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2077188423837716480.html",
+      "category": "通知公告"
+    }
+  ]
 }
