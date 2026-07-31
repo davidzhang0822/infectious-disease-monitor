@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-31 01:22 (北京时间)",
+  "updated_at": "2026-08-01 01:26 (北京时间)",
   "is_init": false,
   "count": 1,
   "items": [
     {
-      "source_key": "chinacdc",
-      "source_name": "中国疾控中心",
-      "title": "全国急性呼吸道传染病哨点监测情况（2026年第30周）",
-      "date": "2026-07-30",
-      "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202607/t20260730_1838512.html",
-      "category": "急性呼吸道传染病哨点监测"
+      "source_key": "ndcpa",
+      "source_name": "国家疾控局",
+      "title": "关于发布《感染性腹泻诊断标准》等4项法定传染病诊断标准的通告",
+      "date": "2026-07-31",
+      "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2083089089290473472.html",
+      "category": "通知公告"
     }
   ]
 }
