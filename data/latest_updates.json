@@ -1,55 +1,15 @@
 {
-  "updated_at": "2026-08-04 01:48 (北京时间)",
+  "updated_at": "2026-08-07 11:16 (北京时间)",
   "is_init": false,
-  "count": 6,
+  "count": 1,
   "items": [
     {
-      "source_key": "nhc",
-      "source_name": "国家卫健委",
-      "title": "关于印发拉沙热诊疗方案（2026年版）的通知",
-      "date": "2026-07-08",
-      "url": "https://www.nhc.gov.cn/ylyjs/gzdt/202607/a749751f95d24899ba62195635d4b794.shtml",
-      "category": "医疗应急司-工作动态"
-    },
-    {
-      "source_key": "nhc",
-      "source_name": "国家卫健委",
-      "title": "关于印发埃博拉病毒病诊疗方案（2026年版）的通知",
-      "date": "2026-06-01",
-      "url": "https://www.nhc.gov.cn/ylyjs/gzdt/202606/a5751c21a4be4e708cdd1914ec2c6980.shtml",
-      "category": "医疗应急司-工作动态"
-    },
-    {
-      "source_key": "nhc",
-      "source_name": "国家卫健委",
-      "title": "关于印发尼帕病毒病诊疗方案（2026年版）的通知",
-      "date": "2026-04-22",
-      "url": "https://www.nhc.gov.cn/ylyjs/gzdt/202604/685eea491175461cb4702252276b662a.shtml",
-      "category": "医疗应急司-工作动态"
-    },
-    {
-      "source_key": "nhc",
-      "source_name": "国家卫健委",
-      "title": "将基孔肯雅热和发热伴血小板减少综合征纳入乙类传染病管理的政策解读",
-      "date": "2026-03-25",
-      "url": "https://www.nhc.gov.cn/ylyjs/gzdt/202603/dec2534f394540c3b3d8c87fb3cad26d.shtml",
-      "category": "医疗应急司-工作动态"
-    },
-    {
-      "source_key": "nhc",
-      "source_name": "国家卫健委",
-      "title": "《关于印发流行性感冒诊疗方案（2025年版）的通知》解读",
-      "date": "2025-01-22",
-      "url": "https://www.nhc.gov.cn/ylyjs/zcwj/202501/853b1678048f4ac3975d1a13657eb683.shtml",
-      "category": "医疗应急司-政策文件"
-    },
-    {
-      "source_key": "nhc",
-      "source_name": "国家卫健委",
-      "title": "关于印发流行性感冒诊疗方案（2025年版）的通知",
-      "date": "2025-01-22",
-      "url": "https://www.nhc.gov.cn/ylyjs/zcwj/202501/f8fcecca59a048bebc4a71847ce57594.shtml",
-      "category": "医疗应急司-政策文件"
+      "source_key": "chinacdc",
+      "source_name": "中国疾控中心",
+      "title": "全国急性呼吸道传染病哨点监测情况（2026年第31周）",
+      "date": "2026-08-06",
+      "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202608/t20260806_1838718.html",
+      "category": "急性呼吸道传染病哨点监测"
     }
   ]
 }
