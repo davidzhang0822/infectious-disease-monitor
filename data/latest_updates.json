@@ -1,14 +1,22 @@
 {
-  "updated_at": "2026-08-07 11:16 (北京时间)",
+  "updated_at": "2026-08-14 00:53 (北京时间)",
   "is_init": false,
-  "count": 1,
+  "count": 2,
   "items": [
     {
       "source_key": "chinacdc",
       "source_name": "中国疾控中心",
-      "title": "全国急性呼吸道传染病哨点监测情况（2026年第31周）",
-      "date": "2026-08-06",
-      "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202608/t20260806_1838718.html",
+      "title": "全国新型冠状病毒感染疫情情况（2026年7月）",
+      "date": "2026-08-13",
+      "url": "https://www.chinacdc.cn/jksj/xgbdyq/202608/t20260813_1838941.html",
+      "category": "全国新冠感染疫情情况"
+    },
+    {
+      "source_key": "chinacdc",
+      "source_name": "中国疾控中心",
+      "title": "全国急性呼吸道传染病哨点监测情况（2026年第32周）",
+      "date": "2026-08-13",
+      "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202608/t20260813_1838936.html",
       "category": "急性呼吸道传染病哨点监测"
     }
   ]
