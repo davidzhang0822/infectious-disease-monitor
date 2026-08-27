@@ -1,15 +1,399 @@
 {
-  "updated_at": "2026-08-21 00:30 (北京时间)",
+  "updated_at": "2026-08-27 23:56 (北京时间)",
   "is_init": false,
-  "count": 1,
+  "count": 49,
   "items": [
     {
       "source_key": "chinacdc",
       "source_name": "中国疾控中心",
-      "title": "全国急性呼吸道传染病哨点监测情况（2026年第33周）",
-      "date": "2026-08-20",
-      "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202608/t20260820_1839048.html",
+      "title": "全国急性呼吸道传染病哨点监测情况（2026年第34周）",
+      "date": "2026-08-27",
+      "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202608/t20260827_1839552.html",
       "category": "急性呼吸道传染病哨点监测"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第34周",
+      "date": "2026-08-27",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202608/t20260827_1839553.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第33周",
+      "date": "2026-08-20",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202608/t20260821_1839077.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第32周",
+      "date": "2026-08-13",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202608/t20260813_1838934.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第31周",
+      "date": "2026-08-06",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202608/t20260807_1838843.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第30周",
+      "date": "2026-07-30",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202607/t20260731_1838517.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第29周",
+      "date": "2026-07-23",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202607/t20260724_1838369.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第28周",
+      "date": "2026-07-16",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202607/t20260717_1838227.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第27周",
+      "date": "2026-07-09",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202607/t20260709_1838005.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第26周",
+      "date": "2026-07-02",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202607/t20260703_1837766.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第25周",
+      "date": "2026-06-25",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202606/t20260625_1837446.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第24周",
+      "date": "2026-06-18",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202606/t20260618_1837077.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第23周",
+      "date": "2026-06-11",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202606/t20260611_1836725.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第22周",
+      "date": "2026-06-04",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202606/t20260604_1836505.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第21周",
+      "date": "2026-05-28",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202605/t20260528_1836114.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第20周",
+      "date": "2026-05-21",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202605/t20260521_1835980.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第19周",
+      "date": "2026-05-14",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202605/t20260514_1835775.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第18周",
+      "date": "2026-05-07",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202605/t20260508_1835624.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第17周",
+      "date": "2026-04-30",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202604/t20260430_1835480.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第16周",
+      "date": "2026-04-23",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202604/t20260424_1835303.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第15周",
+      "date": "2026-04-16",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202604/t20260416_1835083.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "世界卫生组织推荐2026-2027年北半球流感疫苗组分",
+      "date": "2026-02-27",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202602/t20260227_315222.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "中国流感疫苗预防接种技术指南（2025-2026）",
+      "date": "2025-11-03",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202511/t20251103_313234.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "世界卫生组织推荐2026年南半球流感疫苗组分",
+      "date": "2025-09-26",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202509/t20250926_312682.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "世界卫生组织推荐2025-2026年北半球流感疫苗组分",
+      "date": "2025-02-28",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202502/t20250228_304613.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "世界卫生组织推荐2025年南半球流感疫苗组分",
+      "date": "2024-09-28",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202409/t20240928_301175.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2023-2024年度全国流感监测与防控工作年会在乌鲁木齐市召开",
+      "date": "2024-09-19",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202409/t20240919_300291.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2024年流感病毒生信分析培训班在江苏无锡举办",
+      "date": "2024-08-01",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202408/t20240801_291264.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "关于印发人感染禽流感诊疗方案（2024年版）的通知",
+      "date": "2024-08-01",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202408/t20240801_291274.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "病毒病所国家流感中心在Journal of Medical Virology上发表新型H3N8禽流感病毒病原学研究文章",
+      "date": "2024-05-23",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202405/t20240523_278728.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "预防流感，守护健康",
+      "date": "2024-05-23",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202405/t20240523_278719.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "预防流感，谨记这些小妙招",
+      "date": "2024-05-23",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202405/t20240523_278721.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "中国疾控中心病毒病所国家流感中心主任王大燕就“流感趋势如何发展？”接受访谈",
+      "date": "2024-05-23",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202405/t20240523_278722.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "关于甲流，你想知道的都在这里",
+      "date": "2024-05-23",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202405/t20240523_278724.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "预防流感，守护健康",
+      "date": "2024-05-23",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/../lgwd/ptlg/202405/t20240523_278732.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "预防流感，谨记这些小妙招",
+      "date": "2024-05-23",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/../lgwd/ptlg/202405/t20240523_278730.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "关于甲流，你想知道的都在这里",
+      "date": "2024-05-23",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/../lgwd/ptlg/202405/t20240523_278729.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "世界卫生组织推荐2024-2025年北半球流感疫苗组分",
+      "date": "2024-05-22",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202405/t20240522_278649.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "世界卫生组织推荐2024年南半球流感疫苗组分",
+      "date": "2024-05-22",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202405/t20240522_278648.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2022-2023年度全国流感监测与防控工作年会在昆明市召开",
+      "date": "2024-05-22",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202405/t20240522_278647.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "世界卫生组织推荐2023-2024年北半球流感疫苗组分",
+      "date": "2024-05-22",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202405/t20240522_278646.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "世界卫生组织推荐2023年南半球流感疫苗组分",
+      "date": "2024-05-22",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202405/t20240522_278645.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "世界卫生组织推荐2022-2023年北半球流感疫苗组分",
+      "date": "2024-05-22",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202405/t20240522_278644.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2020-2021年全国流感监测与防控工作年会在京顺利召开",
+      "date": "2024-05-22",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202405/t20240522_278643.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "什么是疫苗？",
+      "date": "2019-12-25",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/../lgwd/ptlg/201912/t20191225_209374.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "什么是第一类疫苗和第二类...",
+      "date": "2019-12-25",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/../lgwd/ptlg/201912/t20191225_209375.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "第一类疫苗和第二类疫苗区别？",
+      "date": "2019-12-25",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/../lgwd/ptlg/201912/t20191225_209376.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "接种流感疫苗后就不会得流...",
+      "date": "2019-12-25",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/../lgwd/ptlg/201912/t20191225_209371.htm",
+      "category": "工作动态"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "哪些人需要接种流感疫苗？",
+      "date": "2019-12-25",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/../lgwd/ptlg/201912/t20191225_209372.htm",
+      "category": "工作动态"
     }
   ]
 }
