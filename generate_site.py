@@ -13,6 +13,7 @@ SITE_DIR.mkdir(exist_ok=True)
 SOURCE_LABELS = {
     "ndcpa": "国家疾控局",
     "chinacdc": "中国疾控中心",
+    "ivdc": "国家流感中心",
     "customs": "海关总署",
     "nhc": "国家卫健委",
 }
@@ -54,7 +55,7 @@ body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;backgro
 <div class="container">
 <div class="header">
 <h1>传染病公文每日监测</h1>
-<p>数据源：国家疾控局 / 中国疾控中心 / 海关总署 / 国家卫健委</p>
+<p>数据源：国家疾控局 / 中国疾控中心 / 国家流感中心 / 海关总署 / 国家卫健委</p>
 <p>最近更新：{update_time}</p>
 </div>
 
