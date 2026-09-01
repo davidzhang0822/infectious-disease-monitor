@@ -26,12 +26,13 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <title>传染病公文监测日报</title>
 <style>
 *{{margin:0;padding:0;box-sizing:border-box}}
+html{{scroll-behavior:smooth}}
 body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f5f5;color:#333;line-height:1.6}}
 .container{{max-width:900px;margin:0 auto;padding:20px}}
 .header{{background:#1a237e;color:white;padding:24px 20px;border-radius:12px;margin-bottom:20px}}
 .header h1{{font-size:24px;font-weight:600}}
 .header p{{margin-top:8px;opacity:0.85;font-size:14px}}
-.card{{background:white;border-radius:10px;padding:20px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,0.08)}}
+.card{{background:white;border-radius:10px;padding:20px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,0.08);scroll-margin-top:16px}}
 .card h2{{font-size:16px;color:#1a237e;margin-bottom:12px;border-bottom:2px solid #e8eaf6;padding-bottom:8px}}
 .item{{padding:10px 0;border-bottom:1px solid #f0f0f0}}
 .item:last-child{{border-bottom:none}}
@@ -41,7 +42,9 @@ body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;backgro
 .tag{{display:inline-block;background:#e8eaf6;color:#1a237e;padding:2px 8px;border-radius:4px;font-size:11px;margin-right:6px}}
 .empty{{color:#999;font-style:italic}}
 .stats{{display:flex;gap:16px;margin-bottom:20px;flex-wrap:wrap}}
-.stat{{background:white;border-radius:10px;padding:16px 20px;box-shadow:0 1px 3px rgba(0,0,0,0.08);text-align:center;flex:1;min-width:100px}}
+a.statlink{{text-decoration:none;color:inherit;flex:1;min-width:100px}}
+.stat{{background:white;border-radius:10px;padding:16px 20px;box-shadow:0 1px 3px rgba(0,0,0,0.08);text-align:center;transition:transform .15s ease,box-shadow .15s ease;height:100%}}
+a.statlink:hover .stat{{transform:translateY(-2px);box-shadow:0 4px 12px rgba(26,35,126,0.18)}}
 .stat .num{{font-size:28px;font-weight:700;color:#1a237e}}
 .stat .label{{font-size:12px;color:#888;margin-top:4px}}
 .footer{{text-align:center;padding:20px;color:#aaa;font-size:12px}}
@@ -87,7 +90,8 @@ def build_stats(data: dict) -> str:
     for key, label in SOURCE_LABELS.items():
         src = data.get(key, {})
         count = len(src.get("items", []))
-        html += f'<div class="stat"><div class="num">{count}</div><div class="label">{label}</div></div>'
+        html += (f'<a class="statlink" href="#src-{key}" title="跳转到{label}栏目">'
+                 f'<div class="stat"><div class="num">{count}</div><div class="label">{label}</div></div></a>')
     return html
 
 
@@ -132,7 +136,7 @@ def build_cards(data: dict) -> str:
     for key, label in SOURCE_LABELS.items():
         src = data.get(key, {})
         items = src.get("items", [])[:10]
-        html += f'<div class="card"><h2>{label}</h2>'
+        html += f'<div class="card" id="src-{key}"><h2>{label}</h2>'
         if not items:
             html += '<p class="empty">暂无数据（新源待首次抓取）</p>'
         else:
