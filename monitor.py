@@ -172,14 +172,53 @@ def generate_report(all_new: dict, all_data: dict) -> Path:
     return report_path
 
 
+def _parse_beijing(s: str):
+    """从 'YYYY-MM-DD HH:MM (北京时间)' 解析出带 UTC+8 时区的 datetime，失败返回 None"""
+    if not s:
+        return None
+    m = re.search(r"(\d{4}-\d{2}-\d{2} \d{2}:\d{2})", s)
+    if not m:
+        return None
+    try:
+        return datetime.strptime(m.group(1), "%Y-%m-%d %H:%M").replace(
+            tzinfo=timezone(timedelta(hours=8)))
+    except ValueError:
+        return None
+
+
 def save_latest_updates(new_items: dict, init_mode: bool):
     """保存本次运行新增的条目，供站点'最新更新'栏目展示。
-    粘性：若本次无新增且已存在历史记录，则保留上一次内容（栏目不清空），
-    仅当真正抓到新公告时才用新批次覆盖。"""
+
+    规则：
+    - 本次有新增：用新批次覆盖，updated_at 重置为当前时间（3 天展示窗口重新开始）。
+    - 本次无新增（粘性）：保留上一批内容；但若上一批距现在已经 ≥ 3 天，则清空栏目
+      （写入 count=0、items=[]，站点展示“无新增”），即“内容显示 3 天后不再显示”。
+    """
     latest_path = DATA_DIR / "latest_updates.json"
     total_new = sum(len(v) for v in new_items.values())
+
     if total_new == 0 and latest_path.exists():
-        return  # 无新增且已有记录 → 保留上一批“最新更新”
+        # 无新增 → 先判断上一批是否已超过 3 天
+        try:
+            old = json.loads(latest_path.read_text(encoding="utf-8"))
+            old_dt = _parse_beijing(old.get("updated_at", ""))
+            now_bj = datetime.now(timezone(timedelta(hours=8)))
+            if old_dt and (now_bj - old_dt) >= timedelta(days=3):
+                # 展示已超过 3 天 → 清空栏目
+                payload = {
+                    "updated_at": now_bj.strftime("%Y-%m-%d %H:%M (北京时间)"),
+                    "is_init": False,
+                    "count": 0,
+                    "items": [],
+                }
+                latest_path.write_text(
+                    json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+                print("  [最新更新] 上一批内容已展示超过 3 天，栏目已清空")
+                return
+        except Exception as e:
+            print(f"  [警告] 读取/校验最新更新记录失败，保留原内容: {e}")
+        return  # 未超 3 天 → 保留上一批（粘性）
+
     flat = []
     for key, items in new_items.items():
         src = ALL_SOURCES.get(key)
