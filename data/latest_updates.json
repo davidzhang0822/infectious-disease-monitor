@@ -1,6 +1,31 @@
 {
-  "updated_at": "2026-09-01 09:38 (北京时间)",
+  "updated_at": "2026-09-04 03:04 (北京时间)",
   "is_init": false,
-  "count": 0,
-  "items": []
+  "count": 3,
+  "items": [
+    {
+      "source_key": "chinacdc",
+      "source_name": "中国疾控中心",
+      "title": "全国急性呼吸道传染病哨点监测情况（2026年第35周）",
+      "date": "2026-09-03",
+      "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202609/t20260903_1839779.html",
+      "category": "急性呼吸道传染病哨点监测"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第35周",
+      "date": "2026-09-03",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202609/t20260903_1839795.htm",
+      "category": "流感监测周报"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "中国流感疫苗预防接种技术指南（2026-2027）",
+      "date": "2026-09-03",
+      "url": "https://ivdc.chinacdc.cn/cnic/lggzdt/./202609/t20260903_1839794.htm",
+      "category": "工作动态"
+    }
+  ]
 }
