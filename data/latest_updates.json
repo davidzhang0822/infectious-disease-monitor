@@ -1,6 +1,23 @@
 {
-  "updated_at": "2026-09-08 03:34 (北京时间)",
+  "updated_at": "2026-09-11 02:55 (北京时间)",
   "is_init": false,
-  "count": 0,
-  "items": []
+  "count": 2,
+  "items": [
+    {
+      "source_key": "chinacdc",
+      "source_name": "中国疾控中心",
+      "title": "全国急性呼吸道传染病哨点监测情况（2026年第36周）",
+      "date": "2026-09-10",
+      "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202609/t20260910_1840005.html",
+      "category": "急性呼吸道传染病哨点监测"
+    },
+    {
+      "source_key": "ndcpa",
+      "source_name": "国家疾控局",
+      "title": "关于开展2026年“服务百姓健康行动”全国大型义诊活动周的通知",
+      "date": "2026-09-10",
+      "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2098003738939002880.html",
+      "category": "通知公告"
+    }
+  ]
 }
