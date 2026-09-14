@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-12 02:57 (北京时间)",
+  "updated_at": "2026-09-15 04:08 (北京时间)",
   "is_init": false,
   "count": 1,
   "items": [
     {
-      "source_key": "ivdc",
-      "source_name": "国家流感中心",
-      "title": "2026 第36周",
-      "date": "2026-09-10",
-      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202609/t20260911_1840079.htm",
-      "category": "流感监测周报"
+      "source_key": "ndcpa",
+      "source_name": "国家疾控局",
+      "title": "国家疾控局综合司关于组织开展2026年世界狂犬病日宣传活动的通知",
+      "date": "2026-09-14",
+      "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2099421141589725184.html",
+      "category": "通知公告"
     }
   ]
 }
