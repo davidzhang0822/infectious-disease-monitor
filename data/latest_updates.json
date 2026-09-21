@@ -1,31 +1,15 @@
 {
-  "updated_at": "2026-09-19 02:50 (北京时间)",
+  "updated_at": "2026-09-22 04:15 (北京时间)",
   "is_init": false,
-  "count": 3,
+  "count": 1,
   "items": [
     {
-      "source_key": "chinacdc",
-      "source_name": "中国疾控中心",
-      "title": "全国新型冠状病毒感染疫情情况（2026年8月）",
-      "date": "2026-09-18",
-      "url": "https://www.chinacdc.cn/jksj/xgbdyq/202609/t20260918_1840296.html",
-      "category": "全国新冠感染疫情情况"
-    },
-    {
-      "source_key": "ivdc",
-      "source_name": "国家流感中心",
-      "title": "2026 第37周",
-      "date": "2026-09-17",
-      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202609/t20260918_1840292.htm",
-      "category": "流感监测周报"
-    },
-    {
-      "source_key": "chinacdc",
-      "source_name": "中国疾控中心",
-      "title": "2026年8月全国传染病疫情概况",
-      "date": "2026-09-10",
-      "url": "https://www.chinacdc.cn/jksj/jksj01/202609/t20260918_1840340.html",
-      "category": "全国法定传染病疫情概况"
+      "source_key": "ndcpa",
+      "source_name": "国家疾控局",
+      "title": "关于印发《关于加强卫生健康监督规范化建设的指导意见》的通知",
+      "date": "2026-09-21",
+      "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2101474914952712192.html",
+      "category": "通知公告"
     }
   ]
 }
