@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026-10-03 04:18 (北京时间)",
+  "updated_at": "2026-10-06 06:18 (北京时间)",
   "is_init": false,
-  "count": 1,
-  "items": [
-    {
-      "source_key": "ivdc",
-      "source_name": "国家流感中心",
-      "title": "2026 第39周",
-      "date": "2026-10-01",
-      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202610/t20261002_1842068.htm",
-      "category": "流感监测周报"
-    }
-  ]
+  "count": 0,
+  "items": []
 }
