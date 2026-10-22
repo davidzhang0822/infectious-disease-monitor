@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-10-20 04:51 (北京时间)",
+  "updated_at": "2026-10-23 03:43 (北京时间)",
   "is_init": false,
-  "count": 0,
-  "items": []
+  "count": 1,
+  "items": [
+    {
+      "source_key": "chinacdc",
+      "source_name": "中国疾控中心",
+      "title": "全国急性呼吸道传染病哨点监测情况（2026年第42周）",
+      "date": "2026-10-22",
+      "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202610/t20261022_1842412.html",
+      "category": "急性呼吸道传染病哨点监测"
+    }
+  ]
 }
