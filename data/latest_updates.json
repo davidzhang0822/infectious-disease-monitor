@@ -1,15 +1,31 @@
 {
-  "updated_at": "2026-11-03 07:17 (北京时间)",
+  "updated_at": "2026-10-31 04:22 (北京时间)",
   "is_init": false,
-  "count": 1,
+  "count": 3,
   "items": [
     {
-      "source_key": "ndcpa",
-      "source_name": "国家疾控局",
-      "title": "国家疾控局人事司关于2026年度局直属和联系单位专业技术资格评审结果公示的通知",
-      "date": "2026-11-02",
-      "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2117167798762770432.html",
-      "category": "通知公告"
+      "source_key": "chinacdc",
+      "source_name": "中国疾控中心",
+      "title": "全国新型冠状病毒感染疫情情况（2026年9月）",
+      "date": "2026-10-30",
+      "url": "https://www.chinacdc.cn/jksj/xgbdyq/202610/t20261022_1842410.html",
+      "category": "全国新冠感染疫情情况"
+    },
+    {
+      "source_key": "chinacdc",
+      "source_name": "中国疾控中心",
+      "title": "2026年9月全国传染病疫情概况",
+      "date": "2026-10-29",
+      "url": "https://www.chinacdc.cn/jksj/jksj01/202610/t20261030_1842575.html",
+      "category": "全国法定传染病疫情概况"
+    },
+    {
+      "source_key": "ivdc",
+      "source_name": "国家流感中心",
+      "title": "2026 第43周",
+      "date": "2026-10-29",
+      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202610/t20261030_1842571.htm",
+      "category": "流感监测周报"
     }
   ]
 }

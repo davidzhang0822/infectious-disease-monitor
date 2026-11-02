@@ -10,8 +10,8 @@
 """
 
 import re
-from . import BaseSource
-from .browser import stealth_fetch
+from . import BaseSource, sha1_id
+from .browser import StealthSession
 
 
 class CustomsSource(BaseSource):
@@ -61,12 +61,16 @@ class CustomsSource(BaseSource):
 
     def fetch_items(self) -> list[dict]:
         items = []
-        for url in self.LIST_URLS:
-            try:
-                html = stealth_fetch(url)
-                items.extend(self._parse_list(html))
-            except Exception:
-                pass
+        # 一次浏览器启动抓完本源的所有列表页，故障隔离在本源内部
+        try:
+            with StealthSession() as sess:
+                for url in self.LIST_URLS:
+                    try:
+                        items.extend(self._parse_list(sess.fetch(url)))
+                    except Exception as e:
+                        print(f"  [{self.name}] {url} 失败: {e}")
+        except Exception as e:
+            print(f"  [{self.name}] 浏览器启动失败: {e}")
 
         # 合并历史基线（去重，保持顺序）
         seen_ids = {it["id"] for it in items}
@@ -95,7 +99,8 @@ class CustomsSource(BaseSource):
             date_m = re.search(r'/customs/(\d{4}-\d{2})/', url_path)
             pub_date = date_m.group(1) if date_m else ""
             id_m = re.search(r'article_(\d+)', url_path)
-            item_id = f"customs_{id_m.group(1)}" if id_m else f"customs_{abs(hash(url_path))}"
+            # ⚠️ 必须用稳定 id：abs(hash()) 跨进程会变，同一公告会被反复判为新增
+            item_id = f"customs_{id_m.group(1)}" if id_m else f"customs_{sha1_id(url_path)}"
             if item_id in seen:
                 continue
             seen.add(item_id)

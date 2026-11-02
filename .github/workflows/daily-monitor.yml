@@ -44,12 +44,16 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${TOKEN}@github.com/davidzhang0822/infectious-disease-monitor.git"
+          # 先拉取远端最新提交再提交本地变更，避免后续 rebase 冲突
+          git pull --rebase --autostash origin main || true
           git add data/all_items.json data/latest_updates.json
-          git diff --cached --quiet && echo "无状态变更，跳过提交" || ( \
-            git commit -m "chore: 更新已见记录与最新更新状态" && \
-            git remote set-url origin "https://x-access-token:${TOKEN}@github.com/davidzhang0822/infectious-disease-monitor.git" && \
-            git pull --rebase origin main && \
-            git push )
+          if git diff --cached --quiet; then
+            echo "无状态变更，跳过提交"
+          else
+            git commit -m "chore: 更新已见记录与最新更新状态"
+            git push || echo "::warning::推送失败（可能有并发更新），本次站点内容仍会正常发布"
+          fi
 
       - name: 发布到 GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

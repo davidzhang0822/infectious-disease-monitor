@@ -5,8 +5,8 @@
 """
 
 import re
-from . import BaseSource
-from .browser import stealth_fetch
+from . import BaseSource, sha1_id
+from .browser import StealthSession
 
 
 class NHCSource(BaseSource):
@@ -67,14 +67,19 @@ class NHCSource(BaseSource):
 
     def fetch_items(self) -> list[dict]:
         items = []
-        for channel in self.CHANNELS:
-            try:
-                html = stealth_fetch(channel["url"])
-                channel_items = self._parse_list(html, channel)
-                items.extend(channel_items)
-                print(f"  [{channel['name']}] 解析到 {len(channel_items)} 条")
-            except Exception as e:
-                print(f"  [{channel['name']}] 失败: {e}")
+        # 一次浏览器启动抓完本源的所有列表页，故障隔离在本源内部
+        try:
+            with StealthSession() as sess:
+                for channel in self.CHANNELS:
+                    try:
+                        html = sess.fetch(channel["url"])
+                        channel_items = self._parse_list(html, channel)
+                        items.extend(channel_items)
+                        print(f"  [{channel['name']}] 解析到 {len(channel_items)} 条")
+                    except Exception as e:
+                        print(f"  [{channel['name']}] 失败: {e}")
+        except Exception as e:
+            print(f"  [{self.name}] 浏览器启动失败: {e}")
 
         # 合并历史基线（去重，保持顺序）
         seen_ids = {it["id"] for it in items}
@@ -100,7 +105,9 @@ class NHCSource(BaseSource):
                 continue
             if not any(kw in title for kw in self.INFECTIOUS_KW):
                 continue
-            item_id = f"nhc_{abs(hash(url_path))}"
+            # ⚠️ 必须用稳定 id：abs(hash()) 跨进程会变，导致同一篇公文
+            # 每次运行都被判为"新增"（线上已产生 22 条重复记录）
+            item_id = f"nhc_{sha1_id(url_path)}"
             if item_id in seen:
                 continue
             seen.add(item_id)

@@ -3,16 +3,36 @@
 传染病公文多源每日监测脚本
 
 数据源（自动发现，无需手动注册）：
-  国家疾控局 ndcpa.gov.cn     防控方案、通知公告、政策解读
-  中国疾控中心 chinacdc.cn    疫情月报、新冠月报、呼吸道哨点周报
-  海关总署 customs.gov.cn      口岸疫情防控公告（Playwright 绕过 WAF）
-  国家卫健委 nhc.gov.cn        诊疗方案、法定传染病目录调整（Playwright 绕过 WAF）
+  传染病公文组
+    国家疾控局 ndcpa.gov.cn     防控方案、通知公告、政策解读
+    中国疾控中心 chinacdc.cn    疫情月报、新冠月报、呼吸道哨点周报
+    国家流感中心 ivdc.chinacdc.cn  流感周报、监测数据
+    海关总署 customs.gov.cn      口岸疫情防控公告（Playwright 绕过 WAF）
+    国家卫健委 nhc.gov.cn        诊疗方案、法定传染病目录调整（Playwright 绕过 WAF）
+
+  标准与方法组
+    市场监管总局·食品抽检司      检验检测方法发布/废止公告、立项征集
+    市场监管总局·计量司          计量标准制修订通知公告
+    市场监管总局·食品检验方法库  BJS/KJ 检验方法标准库
+    国家计量技术规范全文公开系统 JJG 规范上线/被代替/废止动态
+    国家食品安全风险评估中心      食品安全国家标准制修订动态
+
   新增源：在 sources/ 下新建继承 BaseSource 的模块并定义 key 即可自动生效。
 
 用法:
     python3 monitor.py                 # 全源检测，生成日报
-    python3 monitor.py --init          # 初始化所有数据源
+    python3 monitor.py --init          # 强制重建基线（清空全部已见记录后重新收录）
+    python3 monitor.py --baseline      # 只刷新基线，不产生"新增"记录
     python3 monitor.py --source ndcpa  # 只检测指定源
+
+新增判定与基线
+--------------
+- 新增源首次出现时自动建立基线：条目写入已见记录，但不计入"新增"，
+  避免新接入的源在首日把几百条历史条目全部推上"最新更新"栏目。
+- --baseline：所有源都只更新基线，不产生任何新增记录，也不改写
+  "最新更新"栏目（用于手工重建基线或源结构变化后的静默刷新）。
+- --init：强制重建基线，所有源的已见记录清空后按本次抓取结果重新收录，
+  并把"最新更新"栏目标记为"系统初始化"。
 """
 
 import re
@@ -63,11 +83,32 @@ def discover_sources():
 ALL_SOURCES = discover_sources()
 
 
-def run_monitor(sources: dict, init_mode: bool = False):
-    """执行多源监测"""
+def run_monitor(sources: dict, init_mode: bool = False, baseline_mode: bool = False):
+    """执行多源监测
+
+    参数
+    ----
+    init_mode     : --init，强制重建基线（清空全部已见记录后重新收录）
+    baseline_mode : --baseline，只刷新基线，不产生新增记录
+
+    新源自动基线
+    ------------
+    某个 key 第一次出现在 all_items.json 中时，它的所有条目都属于"历史存量"，
+    不应作为"新增"推送到栏目。此时条目照常写入 ids/items 建立基线，但不会
+    进入 all_new —— 否则新接入的源首日就会把几百条历史条目全部刷屏。
+    """
     store = SeenStore(DATA_DIR)
     all_data = store.load()
     all_new = {}
+
+    # 记录哪些源是本次运行前就存在的（用于判定"新源首次出现"）
+    known_keys = set(all_data.keys())
+
+    # --init：强制重建基线，清空全部已见记录
+    if init_mode:
+        print("  [初始化] 清空全部已见记录，按本次抓取结果重建基线")
+        all_data = {}
+        known_keys = set()  # 初始化时所有源都视为"首次出现"，不产生新增
 
     # 初始化每个源
     for key in sources:
@@ -96,13 +137,28 @@ def run_monitor(sources: dict, init_mode: bool = False):
         for item in items[:3]:
             print(f"    [{item.get('date', '?')}] {item['title'][:60]}")
 
+        is_new_source = key not in known_keys
+
         # 检测新增
         new_items = detect_new(all_data, key, items)
-        if new_items:
-            print(f"  [新增] {len(new_items)} 条")
-            all_new[key] = new_items
-        else:
+
+        if not new_items:
             print(f"  [无新增]")
+            continue
+
+        # 基线模式 / 新源首次出现：只建立基线，不报新增
+        if baseline_mode or is_new_source:
+            if baseline_mode:
+                reason = "基线模式"
+            elif init_mode:
+                reason = "初始化重建基线"
+            else:
+                reason = "新源首次出现，自动建立基线"
+            print(f"  [基线] 收录 {len(new_items)} 条（{reason}，不计入新增）")
+            continue
+
+        print(f"  [新增] {len(new_items)} 条")
+        all_new[key] = new_items
 
     # 保存
     store.save(all_data)
@@ -197,6 +253,20 @@ def save_latest_updates(new_items: dict, init_mode: bool):
     latest_path = DATA_DIR / "latest_updates.json"
     total_new = sum(len(v) for v in new_items.values())
 
+    # --init 重建基线：本次不产生任何新增，但需要把栏目标记为"已初始化"
+    # 并清空旧的展示内容（否则会残留上一次运行的历史批次）。
+    if init_mode:
+        payload = {
+            "updated_at": datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d %H:%M (北京时间)"),
+            "is_init": True,
+            "count": 0,
+            "items": [],
+        }
+        latest_path.write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+        print("  [最新更新] 初始化完成，栏目已重置")
+        return
+
     if total_new == 0 and latest_path.exists():
         # 无新增 → 先判断上一批是否已超过 3 天
         try:
@@ -245,6 +315,7 @@ def save_latest_updates(new_items: dict, init_mode: bool):
 
 def main():
     init_mode = "--init" in sys.argv
+    baseline_mode = "--baseline" in sys.argv
 
     # 确定启用哪些源
     active_sources = {}
@@ -265,10 +336,16 @@ def main():
 
     print(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] 传染病公文多源监测启动")
     print(f"  启用数据源: {', '.join(s.name for s in active_sources.values())}")
-    print(f"  模式: {'初始化' if init_mode else '日常检测'}")
+    mode = "初始化（重建基线）" if init_mode else ("基线模式" if baseline_mode else "日常检测")
+    print(f"  模式: {mode}")
 
-    new_items, report_path = run_monitor(active_sources, init_mode)
-    save_latest_updates(new_items, init_mode)
+    new_items, report_path = run_monitor(active_sources, init_mode, baseline_mode)
+
+    if baseline_mode:
+        # 基线模式不改写"最新更新"栏目，保留上一次的真实新增记录
+        print("  [最新更新] 基线模式，保留原有栏目内容不变")
+    else:
+        save_latest_updates(new_items, init_mode)
 
     print(f"\n{'='*50}")
     print(f"监测完成")
