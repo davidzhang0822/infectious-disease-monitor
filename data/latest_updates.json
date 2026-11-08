@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-11-07 05:20 (北京时间)",
+  "updated_at": "2026-11-09 04:12 (北京时间)",
   "is_init": false,
   "count": 1,
   "items": [
     {
-      "source_key": "ndcpa",
-      "source_name": "国家疾控局",
-      "title": "国务院防治艾滋病工作委员会办公室关于做好2026年“世界艾滋病日”主题活动的通知",
-      "date": "2026-11-06",
-      "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2118651607693824000.html",
-      "category": "通知公告"
+      "source_key": "samr_spcjs",
+      "source_name": "市场监管总局·食品抽检司",
+      "title": "市场监管总局关于发布《食品中双己酚丁等 5种化合物的测定》等2项食品补充 检验方法的公告",
+      "date": "2026-11-07",
+      "url": "https://www.samr.gov.cn/spcjs/xxfb/art/2026/art_8d31d82004c44a6e8d3d4bb954337183.html",
+      "category": "方法发布公告"
     }
   ]
 }
