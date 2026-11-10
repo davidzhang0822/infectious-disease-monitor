@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-11-09 04:12 (北京时间)",
+  "updated_at": "2026-11-10 08:01 (北京时间)",
   "is_init": false,
   "count": 1,
   "items": [
     {
-      "source_key": "samr_spcjs",
-      "source_name": "市场监管总局·食品抽检司",
-      "title": "市场监管总局关于发布《食品中双己酚丁等 5种化合物的测定》等2项食品补充 检验方法的公告",
-      "date": "2026-11-07",
-      "url": "https://www.samr.gov.cn/spcjs/xxfb/art/2026/art_8d31d82004c44a6e8d3d4bb954337183.html",
-      "category": "方法发布公告"
+      "source_key": "ndcpa",
+      "source_name": "国家疾控局",
+      "title": "关于印发《医疗机构放射卫生监督执法工作规范》的通知",
+      "date": "2026-11-09",
+      "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2119703324044726272.html",
+      "category": "通知公告"
     }
   ]
 }
