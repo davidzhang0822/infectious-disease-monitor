@@ -1,15 +1,23 @@
 {
-  "updated_at": "2026-11-10 08:01 (北京时间)",
+  "updated_at": "2026-11-12 06:32 (北京时间)",
   "is_init": false,
-  "count": 1,
+  "count": 2,
   "items": [
     {
-      "source_key": "ndcpa",
-      "source_name": "国家疾控局",
-      "title": "关于印发《医疗机构放射卫生监督执法工作规范》的通知",
-      "date": "2026-11-09",
-      "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2119703324044726272.html",
-      "category": "通知公告"
+      "source_key": "chinacdc",
+      "source_name": "中国疾控中心",
+      "title": "2026年10月全国传染病疫情概况",
+      "date": "2026-11-11",
+      "url": "https://www.chinacdc.cn/jksj/jksj01/202611/t20261111_1842934.html",
+      "category": "全国法定传染病疫情概况"
+    },
+    {
+      "source_key": "chinacdc",
+      "source_name": "中国疾控中心",
+      "title": "全国新型冠状病毒感染疫情情况（2026年10月）",
+      "date": "2026-11-11",
+      "url": "https://www.chinacdc.cn/jksj/xgbdyq/202611/t20261110_1842872.html",
+      "category": "全国新冠感染疫情情况"
     }
   ]
 }
