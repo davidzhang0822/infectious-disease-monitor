@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-11-17 08:02 (北京时间)",
+  "updated_at": "2026-11-18 07:21 (北京时间)",
   "is_init": false,
   "count": 1,
   "items": [
     {
-      "source_key": "samr_spcjs",
-      "source_name": "市场监管总局·食品抽检司",
-      "title": "市场监管总局 国家卫生健康委关于将酚丁（酚汀）类、比沙可啶类物质纳入食品中可能添加的非食用物质名录的公告（2026年 第38号）",
-      "date": "2026-11-16",
-      "url": "https://www.samr.gov.cn/spcjs/xxfb/art/2026/art_d078d69184cb490494258e70cb6c7269.html",
-      "category": "其他公告"
+      "source_key": "ndcpa",
+      "source_name": "国家疾控局",
+      "title": "关于印发全面推行疫苗处方工作指导意见的通知",
+      "date": "2026-11-17",
+      "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2122513349662380032.html",
+      "category": "通知公告"
     }
   ]
 }
