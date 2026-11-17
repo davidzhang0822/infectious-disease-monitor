@@ -1,23 +1,15 @@
 {
-  "updated_at": "2026-11-14 05:50 (北京时间)",
+  "updated_at": "2026-11-17 08:02 (北京时间)",
   "is_init": false,
-  "count": 2,
+  "count": 1,
   "items": [
     {
-      "source_key": "ndcpa",
-      "source_name": "国家疾控局",
-      "title": "国家疾控局关于印发《公共场所卫生监督量化分级管理指南》的通知",
-      "date": "2026-11-13",
-      "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2121053923252277248.html",
-      "category": "通知公告"
-    },
-    {
-      "source_key": "ivdc",
-      "source_name": "国家流感中心",
-      "title": "2026 第45周",
-      "date": "2026-11-12",
-      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202611/t20261113_1842969.htm",
-      "category": "流感监测周报"
+      "source_key": "samr_spcjs",
+      "source_name": "市场监管总局·食品抽检司",
+      "title": "市场监管总局 国家卫生健康委关于将酚丁（酚汀）类、比沙可啶类物质纳入食品中可能添加的非食用物质名录的公告（2026年 第38号）",
+      "date": "2026-11-16",
+      "url": "https://www.samr.gov.cn/spcjs/xxfb/art/2026/art_d078d69184cb490494258e70cb6c7269.html",
+      "category": "其他公告"
     }
   ]
 }
