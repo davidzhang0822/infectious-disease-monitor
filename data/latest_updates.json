@@ -1,23 +1,47 @@
 {
-  "updated_at": "2026-11-20 06:57 (北京时间)",
+  "updated_at": "2026-11-21 06:35 (北京时间)",
   "is_init": false,
-  "count": 2,
+  "count": 5,
   "items": [
     {
-      "source_key": "chinacdc",
-      "source_name": "中国疾控中心",
-      "title": "全国急性呼吸道传染病哨点监测情况（2026年第46周）",
-      "date": "2026-11-19",
-      "url": "https://www.chinacdc.cn/jksj/jksj04_14275/202611/t20261118_1843068.html",
-      "category": "急性呼吸道传染病哨点监测"
+      "source_key": "ndcpa",
+      "source_name": "国家疾控局",
+      "title": "国家疾控局关于印发《消毒剂、消毒器械和抗（抑）菌剂备案管理办法》的通知",
+      "date": "2026-11-20",
+      "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2123259423507255296.html",
+      "category": "通知公告"
     },
     {
-      "source_key": "ivdc",
-      "source_name": "国家流感中心",
-      "title": "2026 第46周",
-      "date": "2026-11-19",
-      "url": "https://ivdc.chinacdc.cn/cnic/zyzx/lgzb/./202611/t20261119_1843101.htm",
-      "category": "流感监测周报"
+      "source_key": "ndcpa",
+      "source_name": "国家疾控局",
+      "title": "国家疾控局关于印发《消毒产品命名指南》的通知",
+      "date": "2026-11-20",
+      "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2123258253665538048.html",
+      "category": "通知公告"
+    },
+    {
+      "source_key": "ndcpa",
+      "source_name": "国家疾控局",
+      "title": " 国家疾病预防控制局通告",
+      "date": "2026-11-20",
+      "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2123257127150981120.html",
+      "category": "通知公告"
+    },
+    {
+      "source_key": "samr_method",
+      "source_name": "市场监管总局·食品检验方法库",
+      "title": "BJS 202608 食品中5-氯酚丁、双环丙甲酰去乙酰比沙可啶等17种化合物的测定（2026年 第37号）",
+      "date": "2026-11-20",
+      "url": "https://www.samr.gov.cn/cms_files/filemanager/1647978232/attach/202611/3d9ebe910bc64c858a6ae7b44318448e.pdf",
+      "category": "食品补充检验方法"
+    },
+    {
+      "source_key": "samr_method",
+      "source_name": "市场监管总局·食品检验方法库",
+      "title": "BJS 202607 食品中双己酚丁等5种化合物的测定（2026年 第37号）",
+      "date": "2026-11-20",
+      "url": "https://www.samr.gov.cn/cms_files/filemanager/1647978232/attach/202611/04fe4bde60034a21a4323412bc9ece20.pdf",
+      "category": "食品补充检验方法"
     }
   ]
 }
