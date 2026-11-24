@@ -1,47 +1,15 @@
 {
-  "updated_at": "2026-11-21 06:35 (北京时间)",
+  "updated_at": "2026-11-24 10:50 (北京时间)",
   "is_init": false,
-  "count": 5,
+  "count": 1,
   "items": [
     {
       "source_key": "ndcpa",
       "source_name": "国家疾控局",
-      "title": "国家疾控局关于印发《消毒剂、消毒器械和抗（抑）菌剂备案管理办法》的通知",
-      "date": "2026-11-20",
-      "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2123259423507255296.html",
+      "title": "关于印发医防协同高效推动医疗机构传染病防控工作指导意见的通知",
+      "date": "2026-11-23",
+      "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2123217892087861248.html",
       "category": "通知公告"
-    },
-    {
-      "source_key": "ndcpa",
-      "source_name": "国家疾控局",
-      "title": "国家疾控局关于印发《消毒产品命名指南》的通知",
-      "date": "2026-11-20",
-      "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2123258253665538048.html",
-      "category": "通知公告"
-    },
-    {
-      "source_key": "ndcpa",
-      "source_name": "国家疾控局",
-      "title": " 国家疾病预防控制局通告",
-      "date": "2026-11-20",
-      "url": "https://www.ndcpa.gov.cn/jbkzzx/c100014/common/content/content_2123257127150981120.html",
-      "category": "通知公告"
-    },
-    {
-      "source_key": "samr_method",
-      "source_name": "市场监管总局·食品检验方法库",
-      "title": "BJS 202608 食品中5-氯酚丁、双环丙甲酰去乙酰比沙可啶等17种化合物的测定（2026年 第37号）",
-      "date": "2026-11-20",
-      "url": "https://www.samr.gov.cn/cms_files/filemanager/1647978232/attach/202611/3d9ebe910bc64c858a6ae7b44318448e.pdf",
-      "category": "食品补充检验方法"
-    },
-    {
-      "source_key": "samr_method",
-      "source_name": "市场监管总局·食品检验方法库",
-      "title": "BJS 202607 食品中双己酚丁等5种化合物的测定（2026年 第37号）",
-      "date": "2026-11-20",
-      "url": "https://www.samr.gov.cn/cms_files/filemanager/1647978232/attach/202611/04fe4bde60034a21a4323412bc9ece20.pdf",
-      "category": "食品补充检验方法"
     }
   ]
 }
